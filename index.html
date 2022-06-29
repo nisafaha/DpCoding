@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mr. Hotel</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header_left">
+            <img src="logo.jpg" alt="logo">
+        </div>
+        <div class="h3">
+            <h3>Mr. Hotel</h3>
+        </div>
+        <div class="search_bar">
+            <form action="">
+                <input type="text" placeholder="Search"/>
+                <button><i class="material-icons">search</i></button>
+            </form>
+        </div>
+        <div class="header_right">
+            <a href="#">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Foodies</a>
+            <a href="#">Location</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+    <table class="center">
+        <tr>
+            <th>Foodies</th>
+            <th>Prices</th>
+        </tr>
+        <tr>
+            <td><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" img src="images.jpg" alt="rice" width="90" height="90"></td>
+            <td><i><u>Fried  Rice</u></i><br><br>half - Rs. 400<br>full - Rs. 500</td>
+        </tr>
+        <tr>
+            <td><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" img src="kottu.jpg" alt="rice" width="90" height="90"></td>
+            <td><i><u>Kottu</u></i><br><br>half - Rs. 500<br>full - Rs. 800</td>
+        </tr>
+        <tr>
+            <td><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" img src="dolphin.jpg" alt="rice" width="90" height="90"></td>
+            <td><i><u>Dolphin kottu</u></i><br><br>half - Rs. 350<br>full - Rs. 700</td>
+        </tr>
+        <tr>
+            <td><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" img src="paratha.jpg" alt="rice" width="90" height="90"></td>
+            <td><i><u>Paratha</u></i>
+                <ul>
+                    <li>3 peices - Rs. 100</li>
+                    <li>10 peices - Rs. 250</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td><img onmouseover="bigImg(this)" onmouseout="normalImg(this)" img src="hopper.jpg" alt="rice" width="90" height="90"></td>
+            <td><i><u>Hoppers</u></i>
+                <ul>
+                    <li>5 peices - Rs. 100</li>
+                    <li>25 peices - Rs. 300</li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+    <script language="JavaScript" type="text/javascript">
+        function bigImg(x) {
+            x.style.height = "110px";
+            x.style.width = "110px";
+        }
+        function normalImg(x) {
+            x.style.height = "90px";
+            x.style.width = "90px";
+        }
+    </script>
+    <footer>
+        <p>&copy;2022. Tasty Foodies in Sri Lanka.</p>
+    </footer>
+</body>
+</html>

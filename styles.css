@@ -1,0 +1,113 @@
+body {
+    background-image: url('back2.jpg');
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    background-color: antiquewhite;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+
+.header h3 {
+    animation-duration: 10s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+}
+
+@keyframes slidein {
+  0% {
+    margin-left: 0%;
+  }
+  50% {
+    margin-left: 50px;
+  }
+  100% {
+    margin-left: 0%;
+  }
+}
+
+.header_left img{
+    margin-left: 15px;
+    width: 80px;
+    border-radius: 5px;
+}
+
+.search_bar form{
+    border: 1px solid #ddd;
+    height: 35px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+.search_bar input{
+    width: 500px;
+    padding: 10px;
+    margin: 0; 
+    border-radius: 5px;
+}
+
+.search_bar button{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.header_right a{
+     padding: 10px;
+     margin: 5px;
+     color: #fff;
+     background-color: #484848;
+     text-decoration: none;
+     border-radius: 5px;
+}
+
+table{ 
+    width: 700px;
+    border: 2px solid rgb(13, 13, 13);
+    border-radius: 5px;
+    
+}
+
+.center{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+table img{
+    width: 90px;
+    border-radius: 5px;
+    
+}
+
+th{
+    color: #fff;
+    background-color: #d72631;
+    font-weight: bold;
+    text-align: center;
+    padding: 7px;
+}
+
+td{
+    text-align: center;
+    padding: 7px;
+    border: 1px solid rgb(136, 9, 9);
+    background-color: #e5e5dc;
+}
+
+footer{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 10px;
+    padding: 3px;
+    background-color: orange;
+    color: black;
+    position: fixed;
+    bottom: 0;
+    left: 0%;
+    width: 100%;
+}
